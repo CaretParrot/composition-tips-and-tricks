@@ -7,6 +7,7 @@ p {
 }
 
 .ex-image {
+    width: 100%;
     padding: 0;
 }
 
@@ -14,8 +15,20 @@ details>.ex-wrapper {
     padding: 0;
     margin: 0;
     border: none;
+    grid: auto / 1fr 2fr 3fr;
 }
 
-.ex-wrapper {
-    grid: auto / auto 1fr;
+audio {
+    width: 100%;
+}
+
+li {
+    border: none;
+    padding: 0;
+    margin-left: var(--base-unit);
+    text-align: left;
+}
+
+li::marker {
+    content: " -> ";
 }
