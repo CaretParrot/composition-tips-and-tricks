@@ -1,0 +1,21 @@
+p {
+    text-align: left;
+}
+
+:root {
+    --hue: 45;
+}
+
+.ex-image {
+    padding: 0;
+}
+
+details>.ex-wrapper {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.ex-wrapper {
+    grid: auto / auto 1fr;
+}
