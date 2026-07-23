@@ -20,17 +20,8 @@ p {
     padding: 0;
 }
 
-details>.ex-wrapper {
-    padding: 0;
-    margin: 0;
-    border: none;
-    grid: auto / auto auto;
-}
-
-details>.column {
-    padding: 0;
-    margin: 0;
-    border: none;
+.two-column {
+    grid: auto / 1fr 1fr;
 }
 
 audio {
@@ -45,7 +36,7 @@ li {
 }
 
 li::marker {
-    content: " -> ";
+    content: " -> " !important;
 }
 
 @media (orientation: portrait) {
