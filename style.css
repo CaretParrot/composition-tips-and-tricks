@@ -7,15 +7,21 @@ p {
 }
 
 .ex-image {
-    width: 100%;
+    width: 30%;
+    padding: 0;
+    overflow-y: auto;
+    border: calc(var(--base-unit) / 4) solid hsla(0, 0%, 0%, 1);
+}
+
+.img-link {
+    background-color: transparent;
+    border: none;
+    margin: 0;
     padding: 0;
 }
 
-details>.ex-wrapper {
-    padding: 0;
-    margin: 0;
-    border: none;
-    grid: auto / 1fr 2fr 3fr;
+.two-column {
+    grid: auto / 1fr 1fr;
 }
 
 audio {
@@ -30,5 +36,14 @@ li {
 }
 
 li::marker {
-    content: " -> ";
+    content: " -> " !important;
+}
+
+@media (orientation: portrait) {
+    details>.ex-wrapper {
+        padding: 0;
+        margin: 0;
+        border: none;
+        grid: auto / 1fr;
+    }
 }
